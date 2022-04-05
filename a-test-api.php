@@ -16,7 +16,7 @@ defined( 'ABSPATH' ) or die( 'Unauthorized Access' );
 function techiepress_get_send_data() {
 
 	// Add the API endpoint here.
-    $url = 'https://imis.unche.or.ug:83/api/test';
+    $url = 'https://jsonplaceholder.typicode.com/users';
     
     $arguments = array(
         'method' => 'GET'
