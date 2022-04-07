@@ -11,5 +11,4 @@ We shall be using [jsonplaceholders api](https://jsonplaceholder.typicode.com/us
 - Click on the `Query Test API` link in the admin menu.
 
 ## Screenshot
-![Screenshot](./screenshots/test.png)
 ![Screenshot](./screenshots/apioutput.png)
