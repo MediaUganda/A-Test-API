@@ -2,7 +2,7 @@
 ### Get information from external APIs in WordPress. Click the Query API Test link in the Admin menu on activation.
 ### We shall be using [jsonplaceholders api](https://jsonplaceholder.typicode.com/users) as an example to fetch data in WordPress.
 ### Requirements
-* Code editor e.g [vscode](https://code.visualstudio.com/download).
+* Code editor e.g [vscode](https://code.visualstudio.com/download) with extensions [Php DocBlocker](https://marketplace.visualstudio.com/items?itemName=neilbrayfield.php-docblocker) and [Php Intelephense](https://marketplace.visualstudio.com/items?itemName=bmewburn.vscode-intelephense-client).
 * Internet Connection.
 ### The procedure involves only 3 steps.
 * Step 1
@@ -11,6 +11,8 @@
     * Declare a function responsible for calling the external Api inside the created plugin file [docs](https://developer.wordpress.org/apis/handbook/making-http-requests/getting-data-from-an-external-service/).
 * Step 3
     * Declare a function responsible for creating a custom menu page [docs](https://developer.wordpress.org/reference/functions/add_menu_page/)
+## Conclusion
+### We have built a custom plugin that fetches information from external Api
 
 ## Screenshot
 ![Screenshot](./screenshots/test.png)

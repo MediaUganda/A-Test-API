@@ -13,6 +13,11 @@
 // If this file is access directly, abort!!!
 defined( 'ABSPATH' ) or die( 'Unauthorized Access' );
 
+/**
+ * Function responsible for fetching json data from external api
+ *
+ * @return void
+ */
 function techiepress_get_send_data() {
 
 	// Add the API endpoint here.
@@ -21,7 +26,7 @@ function techiepress_get_send_data() {
     $arguments = array(
         'method' => 'GET'
     );
-
+	//Performs an HTTP request using the GET method and returns its response.
 	$response = wp_remote_get( $url, $arguments );
 
 	if ( is_wp_error( $response ) ) {
@@ -41,6 +46,8 @@ function techiepress_get_send_data() {
 
 /**
  * Register a custom menu page to view the information queried.
+ *
+ * @return void
  */
 function techiepress_register_my_custom_menu_page() {
 	add_menu_page(
@@ -54,4 +61,5 @@ function techiepress_register_my_custom_menu_page() {
 	);
 }
 
+//Hook fired to execute the function
 add_action( 'admin_menu', 'techiepress_register_my_custom_menu_page' );
